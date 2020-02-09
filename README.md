@@ -9,7 +9,7 @@ COLUMN_NUMBER = 10
 HOLE_NUMBER = 10
 ARROWS = 5
 
-El personaje aparece siempre en la esquina superior izquierda del tablero mirando hacia abajo. El oro, los agujeros y el Wumpus se sitúan cada vez de una manera distinta a la anterior. El sistema de referencia se establece en la esquina superior izquierda y avanza de derecha aabajo.
+El personaje aparece siempre en la esquina superior izquierda del tablero mirando hacia abajo. El oro, los agujeros y el Wumpus se sitúan cada vez de una manera distinta a la anterior. El sistema de referencia se establece en la esquina superior izquierda y avanza de derecha a abajo.
 
 El personaje atiende a 4 órdendes:
 MOVE. Con esto avanza en la dirección en la que está mirando una casilla.
