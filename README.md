@@ -1,10 +1,19 @@
-wumpus
-======
+INSTRUCCIONES
+=============
 
-A simple test designed for the interview process at Connected Health Services. 
+El código está desarrolldo sobre python 3.7.
 
-Please fork this repo in your account and develop a Java program that implements the rules for the Wumpus Game (see included Powerpoint). You are expected to write the complete game logic, and use simple text interactions to drive the game play (like the text-based adventure games from the old days, http://en.wikipedia.org/wiki/Text-based_game).
+En esta versión la manera de variar los parámetros del juego es modificando las variables directamente en el código, que por defecto son: 
+ROW_NUMBER = 10
+COLUMN_NUMBER = 10
+HOLE_NUMBER = 10
+ARROWS = 5
 
-Bonus points for unit tests ;).
+El personaje aparece siempre en la esquina superior izquierda del tablero mirando hacia abajo. El oro, los agujeros y el Wumpus se sitúan cada vez de una manera distinta a la anterior. El sistema de referencia se establece en la esquina superior izquierda y avanza de derecha aabajo.
 
-Please use Eclipse as your IDE and whatever version of Java you are most confortable with (Scala or Groovy also welcomed). Use whatever framework you prefer for your unit tests.
+El personaje atiende a 4 órdendes:
+MOVE. Con esto avanza en la dirección en la que está mirando una casilla.
+COUNTERCLOCKWISE. Gira sobre la misma casilla 90º en dirección antihoraria.
+CLOCKWISE. Gira sobre la misma casilla 90º en dirección horaria.
+SHOOT. Dispara una flecha en la dirección en la que está mirando (si le quedan).
+EXIT. Permite salir del mapa, pero solo si está en la casilla de salida con el oro recogido.
